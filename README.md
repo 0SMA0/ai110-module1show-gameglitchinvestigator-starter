@@ -25,9 +25,9 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ x ] Describe the game's purpose.
-- [ x ] Detail which bugs you found.
-- [ x ] Explain what fixes you applied.
+- The game's purpose is to check if your guess is correct or not and depending if the user wants hints, it will tell them to go lower or higher based on the guess.
+- The bugs I found were when making a guess, you can't hit enter to guess, expected to confirm the guess, the new game button doesn't work, and to make a new guess, you need to hit submit button again.
+ - Fixed Enter-to-submit by using `st.form` + `st.form_submit_button`, reset full Streamlit session state on New Game and initialized `attempts` correctly, moved pure game logic into `logic_utils.py` for testability, and adjusted `check_guess` to match the tests while mapping UI messages in `app.py`.
 
 ## 📸 Demo
 
